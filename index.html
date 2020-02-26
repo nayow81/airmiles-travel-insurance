@@ -1,0 +1,2218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>AIR MILES - Travel</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://squ.airmiles.ca/cdn/css/pattern_library/1.2.1/style.min.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://toert.github.io/Isolated-Bootstrap/versions/4.0.0-beta/iso_bootstrap4.0.0min.css" rel="stylesheet" />
+    <link href="https://squ.airmiles.ca/cdn/vendors/owl_carousel/v2.2.1/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://squ.airmiles.ca/cdn/vendors/owl_carousel/v2.2.1/owl.theme.default.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <style type="text/css">
+        /****** MOBILE FIXES ******/
+        @media only screen and (min-width : 768px) {
+            .bootstrap .mobile_device_375px {
+                display: none;
+            }
+        }
+
+        @media (max-width: 47.9em) {
+            .bootstrap .am-content-drawer:after {
+                left: 300px !important;
+            }
+        }
+
+        @media (max-width: 61.9em) {
+            .bootstrap .am-content-drawer:after {
+                left: 405px !important;
+            }
+        }
+
+        @media only screen and (max-width : 600px) {
+            .mobile_device_375px {
+                display: block;
+            }
+
+            .bootstrap .desktop {
+                display: none;
+            }
+
+            .mobilecenterp {
+                margin: auto;
+            }
+
+            .bootstrap .owl-item p {
+                color: #5e5e5e !important;
+                padding-top: 15px !important;
+            }
+
+            .bootstrap h1 {
+                font-size: 42px !important;
+            }
+
+            .bootstrap h2 {
+                font-size: 26px !important;
+                padding-top: 0.5em !important;
+                padding-bottom: 1em !important;
+            }
+
+            .bootstrap .breadcrumbs {
+                font-size: 14px !important;
+            }
+
+            .bootstrap .gradientbg {
+                background-position-y: 62% !important;
+                margin-bottom: 30px !important;
+            }
+
+            .owl-carousel .owl-item img {
+                width: 175px !important;
+                height: 175px !important;
+                margin: 0 auto !important;
+            }
+
+            /*** .bootstrap .seeoptions text-align: right !important; width: 55% !important; line-height: normal !important;  *****/
+            .bootstrap .whichplanworks {
+                padding-top: 10px !important;
+            }
+
+            .booktravelbg h4 {
+                font-size: 22px !important;
+            }
+
+            .booktravelbg p {
+                font-size: 14px !important;
+            }
+
+            .bootstrap .am-divider.am-divider--vertical {
+                margin: 15px 15px !important;
+            }
+
+            .bootstrap .bookyourtrip h5 {
+                padding-top: 0px !important;
+            }
+
+            .bootstrap .am-divider.am-divider--horizontal {
+                margin: 0px 0px 20px !important;
+            }
+
+            .bootstrap .am-icon-tip {
+                font-size: 62px !important;
+            }
+
+            .bootstrap .knowyourtravelbg {
+                margin-top: 15px !important;
+            }
+
+            .bootstrap .owl-dots {
+                bottom: 0px !important;
+                margin: 15px !important;
+            }
+
+            .bootstrap .am-icon-hotel {
+                font-size: 55px !important;
+            }
+
+            .bootstrap .am-icon-travel {
+                font-size: 55px !important;
+            }
+
+            .bootstrap .am-icon-car-rental {
+                font-size: 55px !important;
+            }
+
+            .col-center {
+                padding: 0px 15px 0px 15px !important;
+            }
+
+            .bootstrap h4 {
+                font-size: 22px !important;
+            }
+
+            .Additional-Plans-title {
+                font-size: 22px !important;
+                font-weight: 500 !important;
+            }
+
+            .bootstrap button.am-button.am-button--secondary {
+                float: none !important;
+            }
+
+            .bootstrap .wantmore h5 {
+                padding-top: 0px !important;
+            }
+
+            ul.insurance-list li {
+                text-align: left !important;
+                list-style: none !important;
+            }
+
+            .right-column #header h1 {
+                padding-top: 0xp !important;
+            }
+
+            .Compare-plans {
+                width: 100% !important;
+            }
+
+            .bootstrap .breadcrumbs a {
+                color: #5e5e5e !important;
+                font-family: 'omnes', Arial, sans-serif;
+                font-size: 14px !important;
+            }
+
+            .bootstrap .am-content-drawer:after {
+                left: 232px !important;
+            }
+
+            .travel-health {
+                text-align: center !important;
+                font-size: 12px !important;
+            }
+
+            .Compare-plans {
+                padding-bottom: 15px !important;
+            }
+
+            .viewallFAQs-btn {
+                display: block !important;
+                text-align: center !important;
+            }
+
+            .bootstrap .owl-dots {
+                margin: 0px !important;
+            }
+
+            .bestsellermobile {
+                width: 202px;
+                height: auto;
+                background-color: #8e499b;
+                padding: 16px;
+                vertical-align: middle;
+                font-weight: 400 !important;
+                margin-top: 12px;
+                display: block;
+                padding: 10px;
+            }
+
+            .owl-two.owl-carousel .item {
+                padding: 0px !important;
+            }
+
+            .bootstrap a {
+                text-decoration: none !important;
+            }
+
+            .travelinsurance-promo {
+                width: 82px !important;
+            }
+
+
+        }
+
+        /****** ATG FIXES ****/
+        #master_container {
+            overflow: hidden;
+        }
+
+        #rewardsNavContainer {
+            display: none;
+        }
+
+        .right-column #header {
+            padding-top: 0px;
+        }
+
+        #rewards-container {
+            width: 100%;
+            display: block !important;
+        }
+
+        #rewards-content {
+            width: 100%;
+        }
+
+        #page-content-and-menu .right-column {
+            width: 100%;
+        }
+
+        #extra-content {
+            display: none;
+        }
+
+        #rewards-breadcrumb {
+            display: none;
+        }
+
+        #rewards-content.after_breadcrumb {
+            border: none !important
+        }
+
+        .right-column #header h1 {
+            display: none;
+            padding-top: 0px !important;
+        }
+
+        .am-icon-functional-secondary-arrow-up:before {
+            content: '\e90a';
+        }
+
+        .am-icon-functional-secondary-minus:before {
+            content: '\e905';
+        }
+
+        .am-icon-functional-secondary-arrow-right:before {
+            content: '\e903';
+        }
+
+        .am-icon-functional-secondary-arrow-down:before {
+            content: '\e900';
+        }
+
+        .am-icon-functional-secondary-plus:before {
+            content: '\e90d';
+        }
+
+        .am-icon-functional-minus:before {
+            content: '\e905'
+        }
+
+        .am-icon-functional-arrow-up:before {
+            content: '\e904';
+        }
+
+        .bootstrap body {
+            font-family: 'omnes', Arial, sans-serif;
+            color: #5e5e5e;
+            font-size: 16px;
+        }
+
+        .bootstrap h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'omnes', Arial, sans-serif;
+            color: #1790cc;
+            font-style: normal;
+            color: #1790cc;
+        }
+
+        .bootstrap h1 {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 50px;
+            font-weight: 300;
+            color: #1790cc;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .bootstrap h2 {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 30px;
+            font-weight: 300;
+            text-align: center;
+            color: #8e499a;
+        }
+
+        .bootstrap h3 {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 25px;
+            font-weight: normal;
+            text-align: center;
+            color: #1790cc;
+            margin-top: 25px;
+            height: 52px;
+        }
+
+        .bootstrap h4 {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 25px;
+            font-weight: normal;
+            color: #ffffff;
+            padding-top: 30px;
+            padding-bottom 30px;
+        }
+
+        .bootstrap h5 {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 25px;
+            color: #5e5e5e;
+            padding-top: 30px;
+            padding-bottom 30px;
+            margin-bottom: 20px;
+        }
+
+        .bootstrap h6 {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 25px;
+            color: #5e5e5e;
+            padding-top: 25px;
+        }
+
+        .breadcrumbs {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            color: #5e5e5e;
+            padding-bottom: 35px;
+            padding-top: 30px;
+        }
+
+        .breadcrumbs .active {
+            color: #1790cc;
+        }
+
+        #breadcumbs.breadcrumbs a:hover {
+            text-decoration: underline !important;
+        }
+
+        .bootstrap a {
+            color: #1790cc;
+            text-decoration: none !important;
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        .bootstrap .breadcrumbs a {
+            color: #5e5e5e !important;
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px;
+        }
+
+        .bootstrap p {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px !important;
+            font-weight: 300;
+            line-height: normal;
+            color: #5e5e5e;
+        }
+
+        .bootstrap .centerp {
+            margin: auto;
+            text-align: center;
+            width: 68%;
+            color: #5e5e5e;
+        }
+
+        .bootstrap .am-functional-button__text {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px;
+            color: #1790cc;
+            font-weight: 500;
+        }
+
+        .bootstrap .booktravelbg {
+            width: 100%;
+            background-color: #8e499a;
+            overflow: hidden;
+        }
+
+        .bootstrap .gradientbg {
+            width: 100%;
+            background-image: url(img/bg-gradient.jpg);
+            background-repeat: repeat-x;
+            background-position-y: 65%;
+            position: relative;
+            margin-bottom: 46px;
+        }
+
+        .bootstrap .whichplanworks {
+            padding-top: 26px;
+        }
+
+        .bootstrap .booktravel {
+            color: #ffffff;
+        }
+
+        .bootstrap .am-button--primary-white {
+            color: #1790cc !important;
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px;
+        }
+
+        .bootstrap button.am-button.am-button--primary-white {
+            width: 250px;
+            margin-top: 25px;
+        }
+
+        .bootstrap .am-button--primary {
+            color: #ffffff !important;
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px;
+        }
+
+        .bootstrap button.am-button.am-button--primary {
+            width: 250px;
+        }
+
+        .bootstrap .am-button--secondary {
+            color: #ffffff !important;
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px;
+        }
+
+        .bootstrap button.am-button.am-button--secondary {
+            width: 250px;
+            float: left;
+            margin-bottom: 30px;
+        }
+
+        .bootstrap .am-divider.am-divider--vertical {
+            border: solid 2px #f1f1f2 !important;
+            margin: 15px 30px 15px 30px;
+        }
+
+        .bootstrap .am-divider.am-divider--horizontal {
+            border: solid 2px #f1f1f2 !important;
+            margin: 15px 20px !important;
+        }
+
+        [class*="bookyourtrip"] {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+        }
+
+        .bootstrap .callnumber {
+            color: #1790cc;
+            font-weight: 500;
+        }
+
+        .bootstrap .owl-dot {
+            background-color: #ffffff;
+            border-radius: 50% !important;
+            -webkit-box-shadow: 0 0 2px 2px rgba(0, 65, 101, .1);
+            box-shadow: 0 0 2px 2px rgba(0, 65, 101, .1);
+            width: 20px;
+            height: 20px;
+        }
+
+        .bootstrap .owl-dot.active {
+            background-color: #0a6fb3;
+            border-radius: 50% !important;
+            -webkit-box-shadow: 0 0 2px 2px rgba(0, 65, 101, .1);
+            box-shadow: 0 0 2px 2px rgba(0, 65, 101, .1);
+            border: 4px solid #fff;
+            width: 20px;
+            height: 20px;
+        }
+
+        .bootstrap .owl-theme .owl-dots .owl-dot span {
+            width: 20px !important;
+            height: 20px !important;
+            background: none !important;
+            border-radius: 50% !important;
+            display: none;
+        }
+
+        .owl-dot {
+            margin: 5px;
+        }
+
+        .owl-carousel .owl-stage-outer {
+            padding-bottom: 10px;
+        }
+
+        .bootstrap .owl-dot .active {
+            width: 16px;
+            height: 16px;
+            border: 4px solid #fff;
+            font-size: 0px !important;
+        }
+
+        .bootstrap .owl-dot .active {
+            width: 16px;
+            height: 16px;
+            margin: 0 3px;
+        }
+
+        .bootstrap .owl-dots {
+            position: relative;
+            bottom: 15px;
+            z-index: 15;
+            text-align: center;
+        }
+
+        .bootstrap .owl-theme {
+            width: 100%;
+            height: auto;
+            padding-bottom: 10px;
+        }
+
+        .bootstrap .owl-theme .owl-carousel {
+            width: 100%;
+            height: auto;
+        }
+
+        .bootstrap .knowyourtravelbg {
+            width: 100%;
+            background-color: #1890cc;
+            margin-top: 15px;
+        }
+
+        .bootstrap .owl-carousel .item {
+            padding: 20px;
+            color: #ffffff;
+        }
+
+        .bootstrap .owl-item p {
+            font-size: 20px;
+            color: #ffffff;
+            padding-top: 20px;
+        }
+
+        .bootstrap .knowyourtravel-title {
+            font-size: 30px;
+            color: #ffffff;
+            font-family: 'omnes', Arial, sans-serif;
+            line-height: 32px;
+        }
+
+        .travel-health {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 14px !important;
+            font-weight: 500;
+            width: 100%;
+            color: #dff3fb;
+            text-align: right;
+            position: absolute
+        }
+
+        .bootstrap .am-icon-tip {
+            font-size: 90px;
+            text-align: center;
+            position: relative;
+            top: -8px;
+        }
+
+        .bootstrap .getpeacebg {
+            width: 100%;
+            background-color: #dff3fb;
+        }
+
+        .row-center {
+            text-align: center;
+        }
+
+        .col-center {
+            display: inline-block;
+            float: none;
+        }
+
+        .bootstrap .travel-title {
+            font-size: 18px;
+            font-weight: 200;
+            color: #1790cc !important;
+            font-family: 'omnes', Arial, sans-serif;
+            display: block;
+            position: relative;
+        }
+
+        .bootstrap .am-icon-travel:before {
+            content: '\65';
+            color: #1790cc !important;
+        }
+
+        .bootstrap .am-icon-travel {
+            font-size: 90px;
+            text-align: center;
+        }
+
+        .bootstrap .am-icon-car-rental {
+            font-size: 90px;
+            text-align: center;
+        }
+
+        .bootstrap .am-icon-car-rental:before {
+            content: '\2a';
+            color: #1790cc !important;
+        }
+
+        .bootstrap .am-icon-hotel {
+            font-size: 90px;
+            text-align: center;
+        }
+
+        .bootstrap .am-icon-hotel:before {
+            content: '\46';
+            color: #1790cc !important;
+        }
+
+        .bootstrap .am-icon-popular-stores {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .bootstrap .am-icon-popular-stores:before {
+            content: '\71';
+            color: #fab615 !important;
+        }
+
+        .bootstrap .am-icon-checkmark {
+            font-size: 32px;
+            text-align: center;
+        }
+
+        .bootstrap .am-icon-checkmark:before {
+            content: '\e901';
+            color: #8e499b !important;
+        }
+
+        .am-icon-functional-secondary-close::before {
+            content: '\e90b';
+        }
+
+        .bootstrap .getpeacetitle {
+            color: #5e5e5e !important;
+        }
+
+        .bootstrap .manulife-logo {
+            padding-top: 30px;
+            padding-bottom: 25px;
+        }
+
+        .bootstrap .table-bordered th.table-width {
+            width: 357px;
+        }
+
+        .bootstrap .table-bordered th.table-width-2 {
+            width: 208px;
+        }
+
+        .bootstrap .table-bordered th.table-no-border {
+            border-left: 1px solid #ffffff;
+            border-top: 1px solid #ffffff;
+        }
+
+        .bootstrap .table-bordered td,
+        .bootstrap .table-bordered th {
+            border: 1px solid #bbbdbf;
+        }
+
+        .bootstrap .table {
+            margin-top: 10px;
+        }
+
+        .bootstrap .vertical-align {
+            vertical-align: middle !important;
+        }
+
+        .Up-to-100 {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px !important;
+            font-weight: 600;
+            color: #8e499b;
+        }
+
+        .Travel-title {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px;
+            font-weight: 300;
+            color: #5e5e5e;
+        }
+
+        .Travel-text {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #5e5e5e;
+        }
+
+        .Compare-plans {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 25px;
+            font-weight: 500;
+            color: #5e5e5e;
+            line-height: 25px;
+            width: 332px;
+            display: block;
+            padding-bottom: 40px;
+        }
+
+        .Trip-cancel-title {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #1790cc;
+        }
+
+        .Best-Seller {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .purple-border {
+            border-left: solid 3px #8e499b !important;
+            border-right: solid 3px #8e499b !important;
+        }
+
+        .bootstrap .table-striped>tbody>tr:nth-child(odd)>td,
+        .bootstrap .table-striped>tbody>tr:nth-child(odd)>th {
+            background-color: #fff !important;
+        }
+
+        .bootstrap .table-striped>tbody>tr:nth-child(n+3)>td,
+        .bootstrap .table-striped>tbody>tr:nth-child(n+3)>th {
+            background-color: #f2f2f2;
+        }
+
+        #additional-plans.table td,
+        .table th {
+            border: none;
+        }
+
+        table.table.table-condensed {
+            background-color: #1790cc;
+            border: solid 1px #979797;
+            padding: 16px;
+        }
+
+        .Additional-Plans-title {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 25px !important;
+            font-weight: 500;
+            color: #ffffff;
+        }
+
+        .rental-titles {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .terms-conditions p {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 14px !important;
+            font-weight: 500;
+            color: #5e5e5e;
+        }
+
+        .travel-insurance-links {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 14px !important;
+            font-weight: 500 !important;
+            text-align: right;
+            color: #000000 !important;
+        }
+
+        .insurance-list li {
+            margin: 0px 0 2px 0;
+            list-style: none;
+        }
+
+        .faqbg {
+            background-color: #dff3fb;
+        }
+
+        .bootstrap .card-header {
+            padding: 0px;
+            margin-bottom: 0;
+            background-color: #dff3fb !important;
+            border-bottom: 0px !important;
+        }
+
+        .bootstrap .card {
+            background-color: #dff3fb;
+            border: 0px solid !important;
+        }
+
+        .bootstrap .btn {
+            padding: 0px !important;
+        }
+
+        .bootstrap .card-body {
+            padding-left: 50px;
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px !important;
+            font-weight: 300;
+            color: #231f20;
+            line-height: 20px;
+        }
+
+        .travelinsurance-promo {
+            width: 88px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .terms-and-conditions {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            color: #231f20 !important;
+        }
+
+        #accordion {
+            overflow: hidden;
+        }
+
+        .panel {
+            overflow: hidden;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .no-padding {
+            padding: 0px !important;
+        }
+
+        .icon-left {
+            float: left;
+            margin-right: 10px;
+        }
+
+        .faqs-titles {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px !important;
+            color: #1790cc !important;
+            font-weight: 500 !important;
+            overflow: hidden;
+        }
+
+        .am-icon-functional-arrow-left:before {
+            content: '\e902';
+            margin-right: 3px;
+        }
+
+        .am-icon-functional-arrow-right:before {
+
+            content: '\e903';
+            margin-left: 3px;
+        }
+
+        .owl-two .owl-carousel .owl-prev,
+        .owl-two .owl-carousel .owl-next {
+            position: absolute;
+            top: 10px;
+            height: 30px;
+            margin: auto !important;
+        }
+
+        .owl-two .owl-dot {
+            display: none !important;
+        }
+
+        * {
+            border-radius: 0 !important;
+        }
+
+        .bootstrap .group {
+            width: 100%;
+        }
+
+        .bootstrap .options-block {
+            height: 100px;
+        }
+
+        .bootstrap .seeoptions {
+            font-size: 18px;
+            color: #1790cc;
+            padding-left: 10px;
+            white-space: pre-wrap;
+            text-align: left;
+        }
+
+        .bootstrap .am-icon-button {
+            border-radius: 50% !important;
+        }
+
+        .bootstrap .am-content-drawer:after {
+            left: 85px;
+        }
+
+        .bootstrap span.am-icon-button.am-icon-button--primary.am-functional-button--right {
+            transform: rotate(0deg);
+            background: linear-gradient(to top, transparent 0, transparent 50%, #12619a 50%, #0a6fb3 85%);
+            background-color: #0a6fb3;
+        }
+
+        .bootstrap a.accordion-toggle span.am-icon-button.am-icon-button--primary.am-functional-button--right {
+            transform: rotate(0deg);
+            background: linear-gradient(to top, transparent 0, transparent 50%, #12619a 50%, #0a6fb3 85%);
+            background-color: #0a6fb3;
+        }
+
+        .bootstrap .am-content-drawer:after {
+            left: 615px;
+        }
+
+        span.am-icon.am-icon-functional-secondary-close {
+            font-size: 10px !important;
+        }
+
+        .am-icon-functional-secondary-close::before {
+            font-size: 10px !important;
+        }
+
+        button.am-icon-button.am-icon-button--white.am-icon-button--small.am-content-drawer__close-button a {
+            font-size: 10px !important;
+            color: #1790cc !important;
+        }
+
+        .alreadybooknumber {
+            font-weight: 600;
+        }
+
+        .owl-theme .owl-nav [class*=owl-] {
+            background: none !important;
+            margin: 0px !important;
+            padding: 0px !important;
+        }
+
+        .owl-two .owl-carousel {
+            position: relative;
+        }
+
+        .owl-two .owl-nav {
+            margin-top: 0px !important;
+        }
+
+        .owl-prev,
+        .owl-next {
+            position: absolute;
+            top: 10%;
+            margin-top: -10px; // Half of the prev/next buttons height here in negatives to center them perfectly
+        }
+
+        .owl-prev {
+            left: 7%;
+        }
+
+        .owl-next {
+            right: 6%;
+        }
+
+        .promo-text {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 20px !important;
+            color: #1790cc !important;
+            text-align: left;
+            display: block;
+            overflow: hidden;
+            vertical-align: middle;
+            padding-top: 50px;
+        }
+
+        .promo-text-date {
+            font-family: 'omnes', Arial, sans-serif;
+            font-size: 18px !important;
+            color: #5e5e5e;
+            text-align: left;
+        }
+
+        #promo-block {
+            display: none;
+        }
+
+        #mobile-promo-block {
+            display: none;
+        }
+
+        ul li {
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+
+        .bootstrap .card-body a {
+            font-size: 18px;
+        }
+
+    </style>
+
+    <div class="bootstrap">
+        <!-- Hero Section -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p id="breadcumbs" class="breadcrumbs"><a href="https://www.airmiles.ca/arrow/RewardsHome?selectedCategoryId=cat670016&changeLocale=en_CA">Dream Rewards</a> / <a href="https://www.airmiles.ca/arrow/TravelOneFlightHome?selectedCategoryId=cat670036">Travel</a> / <span class="active">Travel Insurance</span></p>
+                </div>
+            </div>
+        </div>
+        <section class="gradientbg desktop">
+            <div class="container fixed-width">
+
+                <h1 style="display: block !important;">AIR MILES<sup>&reg;</sup> Travel Insurance</h1>
+                <h2>Protect your Miles and the moments most important to you.</h2>
+                <div class="row" style="padding-top: 30px;">
+                    <div class="col-4 text-center">
+                        <img src="img/emergency-img.png" style="border-radius: 50% !important;">
+                        <h3>Emergency Medical Coverage</h3>
+                        <p class="centerp">Protection from unexpected emergency medical costs that may happen during your trip.</p>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img src="img/tripcancel-img.png" style="border-radius: 50% !important;">
+                        <h3>Trip Cancellation and Interruption</h3>
+                        <p class="centerp">Reimbursement if you need to cancel or change travel plans. </p>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img src="img/milesprotect-img.png" style="border-radius: 50% !important;">
+                        <h3>calling 1-844-807-0759</h3>
+                        <p class="centerp">Coverage for your hard-earned AIR MILES Reward Miles if you need to cancel or change travel plans.</p>
+                    </div>
+                    <div class="col-12 text-center whichplanworks">
+                        <a href="#manulifeplans">
+                            <span class="am-functional-button__text seeoptions">See which plan works best for you</span>
+                            <span class="am-icon-button am-icon-button--primary am-functional-button--right"> <span class="am-icon am-icon-functional-secondary-arrow-right"> </span> </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Hero Section -->
+
+        <!-- Mobile Hero Section -->
+        <section class="gradientbg mobile_device_375px">
+            <div class="container fixed-width">
+
+                <h1 style="display: block !important;">AIR MILES<sup>&reg;</sup> Travel Insurance</h1>
+                <h2>Protect your Miles and the moments most important to you.</h2>
+                <!-- Carousel-->
+                <div class="owl-theme">
+                    <div class="owl-one owl-carousel carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <img src="img/emergency-img.png" style="border-radius: 50% !important;">
+                                    <h3>Emergency Medical Coverage</h3>
+                                    <p class="mobilecenterp">Protection from unexpected emergency medical costs that may happen during your trip.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <img src="img/tripcancel-img.png" style="border-radius: 50% !important;">
+                                    <h3>Trip Cancellation and Interruption </h3>
+                                    <p class="mobilecenterp">Reimbursement if you need to cancel or change travel plans. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <img src="img/milesprotect-img.png" style="border-radius: 50% !important;">
+                                    <h3>Miles Protection </h3>
+                                    <p class="mobilecenterp">Coverage for your hard-earned AIR Miles Reward Miles if you need to cancel or change travel plans.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Carousel -->
+
+                <div class="row">
+
+                    <div class="col-12 text-center whichplanworks">
+                        <a href="#manulifeplansmobile">
+                            <span class="am-functional-button__text seeoptions">See which plan works best for you</span>
+                            <span class="am-icon-button am-icon-button--primary am-functional-button--right"> <span class="am-icon am-icon-functional-secondary-arrow-right"> </span> </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Mobile Hero Section -->
+
+        <!-- Book your travel Section -->
+        <section class="booktravelbg desktop">
+            <div class="container fixed-width">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center booktravel">
+                        <h4>Already booked your travel?</h4>
+                        <p><a href="https://www.igoinsured.com/direct/start.aspx?ag=AMTIB2C"><button class="am-button am-button--primary-white">Book Travel Insurance</button></a></p>
+                        <p style="padding-top:10px; padding-bottom: 20px; color: #fff">If you live in the following provinces, you can add AIR MILES Travel Insurance by calling <span class="alreadybooknumber">1-844-807-0759</span><br>
+
+                            Nova Scotia - New Brunswick - Prince Edward Island - Québec - Saskatchewan - Yukon</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Book your travel Section -->
+
+        <!-- Mobile Book your travel Section -->
+        <section class="booktravelbg mobile_device_375px" style="margin-bottom: 15px;">
+            <div class="container fixed-width">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center booktravel">
+                        <h4>Already booked your travel?</h4>
+                        <p><a href="https://www.igoinsured.com/direct/start.aspx?ag=AMTIB2C"><button class="am-button am-button--primary-white">Book Travel Insurance</button></a></p>
+                        <p style="padding-top:10px; color: #fff; font-size: 14px !important; text-align: left !important; ">If you live in the following provinces, <br>proyou can add AIR MILES Travel Insurance by calling</p>
+                        <p style="color: #fff; font-size: 14px !important; text-align: left !important; font-weight: 600 !important">1-844-807-0759</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <p style="padding-bottom: 20px; color: #fff; font-size: 14px !important; text-align: left !important; ">Nova Scotia<br>New Brunswick<br>Prince Edward Island</p>
+                            </div>
+                            <div class="col-6">
+                                <p style="padding-bottom: 20px; color: #fff; font-size: 14px !important; text-align: left !important; ">Québec<br>Saskatchewan<br>Yukon</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Mobile Book your travel Section -->
+
+        <!-- Still need to book -->
+        <div id="promo-block" class="container desktop">
+            <div class="row">
+                <div class="col-lg-12 col-center text-center">
+                    <div class="col-sm-5" style="display: block; overflow: hidden; margin: 0 auto;">
+                        <img src="img/38386-BonusMiles-Tag-EN.png" class="travelinsurance-promo" style="float:left; margin-right: 15px;">
+                        <p id="promo-text" class="promo-text">when you purchase<br>
+                            AIR MILES Travel Insurance<br>
+                            with your AIR MILES Credit Card.
+                        </p>
+                        <p id="promo-text-date" class="promo-text-date">Offer valid June 5 to July 3, 2018.</p>
+                    </div>
+                    <p>
+                        <a class="am-functional-button am-functional-button--dark btn" id="hideshow" value="hide/show" data-value="terms1">
+                            <span class="am-functional-button__text terms-and-conditions">Terms and conditions</span>
+                            <span class="am-icon-button am-icon-button--dark am-functional-button--right">
+                                <span class="am-icon terms-icon am-icon-functional-secondary-plus"></span>
+                            </span>
+                        </a>
+                        <div style="display:none;" id="terms1" class="am-content-drawer am-content-drawer--light">
+                            <div class="am-content-drawer__pane am-content-drawer__pane--light terms-conditions">
+                                <a href="#collapseterms" id="hideshow" value="hide/show" data-value="terms1"><button class="am-icon-button am-icon-button--white am-icon-button--small am-content-drawer__close-button">
+                                        <span class="am-icon am-icon-functional-secondary-close"></span>
+                                </a>
+                                </button>
+                                <p>Lorem ipsum dolor sit amet, tempor pellentesque vestibulum nulla, ullamcorper nibh leo tempus leo, dignissim neque massa suscipit, tortor sit ullamcorper. Amet ornare lorem. Sed blandit quisque lorem, aliquam tempor enim pulvinar. Ac magna, per eu vehicula diam...</p>
+                            </div>
+                        </div>
+                    </p>
+                </div>
+                <div class="am-divider am-divider--horizontal col--md-12">
+                </div>
+            </div>
+        </div>
+        <!-- End of Still need to book -->
+
+        <!-- Making Claim -->
+        <div class="container fixed-width desktop">
+            <div class="row">
+                <div class="col-lg bookyourtrip">
+                    <h5>Still need to book your trip?</h5>
+                    <p>We can help with that.</p>
+                    <p><a href="https://www.airmiles.ca/arrow/TravelOneFlightHome?selectedCategoryId=cat670036&changeLocale=en_CA"><span class="am-functional-button__text seeoptions" style="
+    padding-left: 0px;">Book travel</span>
+                            <span class="am-icon-button am-icon-button--primary am-functional-button--right"> <span class="am-icon am-icon-functional-secondary-arrow-right"> </span></a> </span></p>
+
+                </div>
+                <div class="am-divider am-divider--vertical">
+                </div>
+                <div class="col-lg bookyourtrip">
+                    <h5>Making a claim?</h5>
+                    <p>Contact Active Care Management to obtain a Claims Kit at</p>
+
+                    <p class="callnumber">1-855-841-4794</p>
+
+                </div>
+                <div class="am-divider am-divider--vertical">
+                </div>
+                <div class="col-lg bookyourtrip">
+                    <h5>Medical Emergency?</h5>
+                    <p>Please contact the Assistance Provider immediately</p>
+
+                    <p>From the U.S. or Canada</p>
+
+                    <p class="callnumber">(Toll Free): 1-888-491-2285</p>
+
+                    <p>From anywhere else in the world</p>
+
+                    <p class="callnumber">(Call Collect): 1-519-251-7427</p>
+
+                </div>
+            </div>
+        </div>
+        <!-- End of Making Claim -->
+
+        <!-- Mobile Making Claim -->
+        <div class="container fixed-width mobile_device_375px">
+            <div class="row">
+                <div class="col-lg bookyourtrip text-center">
+                    <h5>Still need to book your trip?</h5>
+                    <p>We can help with that.</p>
+                    <p><a href="https://www.airmiles.ca/arrow/TravelOneFlightHome?selectedCategoryId=cat670036&changeLocale=en_CA"><span class="am-functional-button__text">Book travel</span>
+                            <span class="am-icon-button am-icon-button--primary am-functional-button--right"> <span class="am-icon am-icon-functional-secondary-arrow-right"> </span> </span></a></p>
+
+                </div>
+                <div class="am-divider am-divider--vertical">
+                </div>
+                <div class="col-lg bookyourtrip text-center">
+                    <h5>Making a claim?</h5>
+                    <p>Contact Active Care Management to obtain a Claims Kit at</p>
+
+                    <p class="callnumber">1-855-841-4794</p>
+
+                </div>
+                <div class="am-divider am-divider--vertical">
+                </div>
+                <div class="col-lg bookyourtrip text-center">
+                    <h5>Medical Emergency?</h5>
+                    <p>Please contact the Assistance Provider immediately</p>
+
+                    <p>From the U.S. or Canada</p>
+
+                    <p class="callnumber">(Toll Free): 1-888-491-2285</p>
+
+                    <p>From anywhere else in the world</p>
+
+                    <p class="callnumber">(Call Collect): 1-519-251-7427</p>
+
+                </div>
+            </div>
+        </div>
+        <!-- End of Mobile Making Claim -->
+
+        <!-- Know your travel Carousel Section -->
+        <section class="knowyourtravelbg desktop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg bookyourtrip">
+
+                        <!-- Carousel-->
+                        <div class="owl-theme">
+                            <div class="owl-one owl-carousel carousel-inner">
+                                <div class="item active">
+                                    <div class="row">
+                                        <div class="col-lg-2 text-right">
+                                            <span class="am-icon am-icon-tip"></span>
+                                        </div>
+                                        <div class="col-lg-10 no-padding">
+                                            <span class="knowyourtravel-title">Did you know?</span>
+                                            <p>
+                                                The Government Health Insurance Plan (GHIP) only pays a small portion of medical bills incurred outside of Canada, which means that travel medical expenses can be very expensive.
+                                            </p>
+                                            <p>
+                                                The Travel Health Insurance Association of Canada recommends you follow these three “travel rules” before you leave the country.
+                                            </p>
+
+                                            <!--div class="travel-health">Travel Health Insurance Association of Canada</div-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-lg-2 text-right">
+                                            <span class="am-icon am-icon-tip"></span>
+                                        </div>
+                                        <div class="col-lg-10 no-padding">
+                                            <span class="knowyourtravel-title">Travel rule #1: Know your health</span>
+                                            <p>
+                                                Do you have any pre-existing conditions? Consult your healthcare provider if you’re not sure.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-lg-2 text-right">
+                                            <span class="am-icon am-icon-tip"></span>
+                                        </div>
+                                        <div class="col-lg-10 no-padding">
+                                            <span class="knowyourtravel-title">Travel rule #2: Know your trip</span>
+                                            <p>
+                                                How long is your trip? Is your family joining you? Will you be doing any sporting or adventure activities?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-lg-2 text-right">
+                                            <span class="am-icon am-icon-tip"></span>
+                                        </div>
+                                        <div class="col-lg-10 no-padding">
+                                            <span class="knowyourtravel-title">Travel rule #3: Know your policy</span>
+                                            <p>
+                                                What am I covered for? Are pre-existing conditions covered? What is the emergency contact number? What are the policy benefits?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Carousel -->
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Know your travel Carousel Section-->
+
+        <!-- Mobile Know your travel Carousel Section -->
+        <section class="knowyourtravelbg mobile_device_375px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg bookyourtrip">
+
+                        <!-- Carousel-->
+                        <div class="owl-theme">
+                            <div class="owl-one owl-carousel carousel-inner">
+                                <div class="item active">
+                                    <div class="row">
+                                        <div class="col-lg-2 text-center">
+                                            <span class="am-icon am-icon-tip"></span>
+                                        </div>
+                                        <div class="col-lg-10 no-padding text-center">
+                                            <span class="knowyourtravel-title">Did you know?</span>
+                                            <p style="color: #ffffff !important; ">
+                                                The Government Health Insurance Plan (GHIP) only pays a small portion of medical bills incurred outside of Canada, which means that travel medical expenses can be very expensive.
+                                            </p>
+                                            <p style="color: #ffffff !important; ">
+                                                The Travel Health Insurance Association of Canada recommends you follow these three “travel rules” before you leave the country.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-lg-2 text-center">
+                                            <span class="am-icon am-icon-tip"></span>
+                                        </div>
+                                        <div class="col-lg-10 no-padding text-center">
+                                            <span class="knowyourtravel-title">Travel rule #1:<br> Know your health</span>
+                                            <p style="color: #ffffff !important; ">
+                                                Do you have any pre-existing conditions? Consult your healthcare provider if you’re not sure.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-lg-2 text-center">
+                                            <span class="am-icon am-icon-tip"></span>
+                                        </div>
+                                        <div class="col-lg-10 no-padding text-center">
+                                            <span class="knowyourtravel-title">Travel rule #2:<br> Know your trip</span>
+                                            <p style="color: #ffffff !important; ">
+                                                How long is your trip? Is your family joining you? Will you be doing any sporting or adventure activities?
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-lg-2 text-center">
+                                            <span class="am-icon am-icon-tip"></span>
+                                        </div>
+                                        <div class="col-lg-10 no-padding text-center">
+                                            <span class="knowyourtravel-title">Travel rule #3:<br> Know your policy</span>
+                                            <p style="color: #ffffff !important; ">
+                                                What am I covered for? Are pre-existing conditions covered? What is the emergency contact number? What are the policy benefits?
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Carousel -->
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Mobile Know your travel Carousel Section-->
+
+        <!-- Get Peace Section -->
+        <section class="getpeacebg desktop">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col text-center booktravel">
+                        <h4 class="getpeacetitle">Get more peace of mind for every kind of trip</h4>
+                        <div class="col-3 col-center">
+                            <span class="am-icon am-icon-travel"></span>
+                            <span class="travel-title">Flights</span></div>
+                        <div class="col-3  col-center">
+                            <span class="am-icon am-icon-hotel"></span>
+                            <span class="travel-title">Hotel</span></div>
+                        <div class="col-3 col-center"><span class="am-icon am-icon-car-rental"></span>
+                            <span class="travel-title">Car Rental</span></div>
+                        <p style="padding-bottom: 20px; padding-top: 20px;"><a href="https://www.airmiles.ca/arrow/TravelOneFlightHome?selectedCategoryId=cat670036&changeLocale=en_CA"><button class="am-button am-button--primary">Book Travel</button></a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Get Peace Section-->
+
+        <!-- Mobile Get Peace Section -->
+        <section class="getpeacebg mobile_device_375px">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col text-center booktravel">
+                        <h4 class="getpeacetitle">Get more peace of mind for every kind of trip</h4>
+                        <div class="col-xs-4 col-center">
+                            <span class="am-icon am-icon-travel"></span>
+                            <span class="travel-title">Flights</span></div>
+                        <div class="col-xs-4 col-center">
+                            <span class="am-icon am-icon-hotel"></span>
+                            <span class="travel-title">Hotel</span></div>
+                        <div class="col-xs-4 col-center"><span class="am-icon am-icon-car-rental"></span>
+                            <span class="travel-title">Car Rental</span></div>
+                        <p style="padding-bottom: 5px; padding-top: 20px;"><a href="https://www.airmiles.ca/arrow/TravelOneFlightHome?selectedCategoryId=cat670036&changeLocale=en_CA"><button class="am-button am-button--primary">Book Travel</button></a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Mobile Get Peace Section-->
+
+        <!-- Manulife Section-->
+        <div class="container desktop">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-12">
+                    <a name="manulifeplans"></a>
+                    <img src="img/manulife-logo.png" class="manulife-logo">
+                    <p>Protect your trip and be prepared for the unexpected. Chances are your credit card does not cover your Miles, taxes and fees.
+                        <br>AIR MILES Travel Insurance can reimburse up to 100% of your Miles, taxes and fees. * Terms and Conditions apply.</p>
+                </div>
+            </div>
+        </div>
+        <!-- End of Manulife Section-->
+
+        <!-- Mobile Manulife Section-->
+        <div class="container mobile_device_375px">
+            <div class="row align-items-center justify-content-center text-center">
+                <div class="col-lg-12">
+                    <a name="manulifeplansmobile"></a>
+                    <img src="img/manulife-logo.png" class="manulife-logo">
+                    <p>Protect your trip and be prepared for the unexpected. Chances are your credit card does not cover your Miles, taxes and fees.
+                        <br>AIR MILES Travel Insurance can reimburse up to 100% of your Miles, taxes and fees. * Terms and Conditions apply. Please contact the Assistance Provider immediately.</p>
+                    <span class="Compare-plans">Compare plans and select the one that best suits your travel needs</span>
+                    <p><a href="https://www.igoinsured.com/direct/start.aspx?ag=AMTIB2C"><button class="am-button am-button--secondary" style=" margin-bottom: 0px !important; ">Book Travel Insurance</button></a></p>
+                </div>
+            </div>
+        </div>
+        <!-- End of Mobile Manulife Section-->
+
+        <!-- Table Section-->
+        <div class="container desktop">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-12">
+                    <table class="table table-bordered table-striped">
+                        <tbody>
+                            <tr>
+                                <th scope="row" style="border-right:1px solid #ffffff;border-left; border-top:1px solid #ffffff;:1px solid #ffffff; border-bottom:1px solid #ffffff; border-left:1px solid #ffffff;"></th>
+                                <td style="border-right:1px solid #ffffff; border-top:1px solid #ffffff;"></td>
+                                <td style="border-top:1px solid #ffffff;"></td>
+                                <td class="table-width Best-Seller" style="  background-color: #8e499b !important;
+  border: solid 3px #8e499b; padding-top: 10px !important; padding-bottom: 10px !important; font-size: 18px !important">Bestseller</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="table-no-border" style="padding-left: 0px; padding-top: 0px; "><span class="Compare-plans">Compare plans and select the one that best suits your travel needs</span>
+                                    <p><a href="https://www.igoinsured.com/direct/start.aspx?ag=AMTIB2C"><button class="am-button am-button--secondary">Book Travel Insurance</button></a></p>
+                                </th>
+                                <td class="table-width" style="width: 208px;">
+                                    <span class="Trip-cancel-title">Trip Cancellation &amp; Interruption Plan</span>
+                                    <p style="margin-top: 16px;">Just need basic coverage to protect your Miles? This is the plan for you.</p>
+                                </td>
+                                <td class="table-width" style="width: 208px; background-color: #f1fafe;">
+                                    <span class="Trip-cancel-title">Non-Medical Package<br>Plan</span>
+                                    <p style="margin-top: 16px;">If you don&#39;t need emergency medical coverage, this package protects your Miles and more.</p>
+                                </td>
+                                <td class="table-width purple-border" style="width: 210px; background-color: #f1fafe;">
+                                    <span class="Trip-cancel-title">Worldwide or Canada Comprehensive Plan</span>
+                                    <p style="margin-top: 16px;">Our best-selling plans protect your Miles and provide a variety of coverages when you travel within Canada or worldwide.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="table-width Up-to-100 vertical-align">Up to 100% AIR MILES Reward Miles reimbursement* </th>
+                                <td class="table-width-2 text-center"><span class="am-icon am-icon-popular-stores"></span></td>
+                                <td class="table-width-2 text-center"><span class="am-icon am-icon-popular-stores"></span></td>
+                                <td class="table-width-2 text-center purple-border"><span class="am-icon am-icon-popular-stores"></span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="table-width Up-to-100 vertical-align">Up to 100% reimbursment of taxes and fees*</th>
+                                <td class="table-width-2 text-center"><span class="am-icon am-icon-popular-stores"></span></td>
+                                <td class="table-width-2 text-center"><span class="am-icon am-icon-popular-stores"></span></td>
+                                <td class="table-width-2 text-center purple-border"><span class="am-icon am-icon-popular-stores"></span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="table-width vertical-align"><span class="Travel-text">24/7 Emergency Travel Assistance</span>
+                                    <p class="Travel-text">For medical, travel, legal advice, replacing travel documents and more*</p>
+                                </th>
+                                <td class="table-width-2 text-center vertical-align"><span class="am-icon am-icon-checkmark"></span></td>
+                                <td class="table-width-2 text-center vertical-align"><span class="am-icon am-icon-checkmark"></span></td>
+                                <td class="table-width-2 text-center vertical-align purple-border"><span class="am-icon am-icon-checkmark"></span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="table-width vertical-align" style=><span class="Travel-text">Trip Cancellation</span>
+                                    <p class="Travel-text">Includes Cancel for Any Reason - up to 50% reimbursement if you cancel 10 days or more prior to your trip and if you purchase insurance within 72 hours of booking your trip*</p>
+                                </th>
+                                <td class="table-width-2 text-center vertical-align"><span class="am-icon am-icon-checkmark"></span></td>
+                                <td class="table-width-2 text-center vertical-align"><span class="am-icon am-icon-checkmark"></span></td>
+                                <td class="table-width-2 text-center vertical-align purple-border"><span class="am-icon am-icon-checkmark"></span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="table-width vertical-align"><span class="Travel-text">Trip Interruption*</span></th>
+                                <td class="table-width-2 text-center vertical-align"><span class="am-icon am-icon-checkmark"></span></td>
+                                <td class="table-width-2 text-center vertical-align"><span class="am-icon am-icon-checkmark"></span></td>
+                                <td class="table-width-2 text-center vertical-align purple-border"><span class="am-icon am-icon-checkmark"></span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="table-width vertical-align"><span class="Travel-text">Travel Delay and Misconnection*</span></th>
+                                <td class="table-width-2 text-center vertical-align"><span class="am-icon am-icon-checkmark"></span></td>
+                                <td class="table-width-2 text-center vertical-align"><span class="am-icon am-icon-checkmark"></span></td>
+                                <td class="table-width-2 text-center vertical-align purple-border"><span class="am-icon am-icon-checkmark"></span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="table-width vertical-align"><span class="Travel-text">Baggage and Personal Effects*</span></th>
+                                <td class="table-width-2"></td>
+                                <td class="table-width-2 text-center vertical-align"><span class="am-icon am-icon-checkmark"></span></td>
+                                <td class="table-width-2 text-center vertical-align purple-border"><span class="am-icon am-icon-checkmark"></span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="table-width vertical-align"><span class="Travel-text">Personal Money*</span></th>
+                                <td class="table-width-2"></td>
+                                <td class="table-width-2 text-center vertical-align"><span class="am-icon am-icon-checkmark"></span></td>
+                                <td class="table-width-2 text-center vertical-align purple-border"><span class="am-icon am-icon-checkmark"></span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="table-width vertical-align"><span class="Travel-text">Flight and Travel Accident Coverage*</span></th>
+                                <td class="table-width-2"></td>
+                                <td class="table-width-2 text-center vertical-align"><span class="am-icon am-icon-checkmark"></span></td>
+                                <td class="table-width-2 text-center vertical-align purple-border"><span class="am-icon am-icon-checkmark"></span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="table-width vertical-align"><span class="Travel-text">Emergency Medical</span>
+                                    <p class="Travel-text">Includes medical concierge services by StandBy<sup>MD</sup> in 86 countries and over 4,000 cities*</p>
+                                </th>
+                                <td class="table-width-2"></td>
+                                <td class="table-width-2"></td>
+                                <td class="table-width-2 text-center vertical-align purple-border" style="border-bottom: solid 3px #8e499b;"><span class="am-icon am-icon-checkmark"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- End of Table Section-->
+
+        <!-- Mobile Table Section-->
+        <div class="container mobile_device_375px">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-12">
+
+                    <!-- Carousel-->
+                    <div class="owl-theme">
+                        <div class="owl-two owl-carousel carousel-inner">
+
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-12 text-center">
+
+                                        <table class="table table-bordered table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="table-width" style="height: 305px; vertical-align: middle;" colspan="2">
+                                                        <div style="width:202px; text-align: center; margin:auto" class="text-center"> <span class="Trip-cancel-title">Trip Cancellation &amp; Interruption Plan</span>
+                                                            <p>Just need basic coverage to protect your Miles? This is the plan for you.</p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width Up-to-100 vertical-align">Up to 100% AIR MILES Reward Miles reimbursement* </th>
+                                                    <td class="table-width-2 text-center"><span class="am-icon am-icon-popular-stores"></span></td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width Up-to-100 vertical-align">Up to 100% reimbursment of taxes and fees*</th>
+                                                    <td class="table-width-2 text-center"><span class="am-icon am-icon-popular-stores"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align"><span class="Travel-text">24/7 Emergency Travel Assistance</span>
+                                                        <p class="Travel-text">For medical, travel, legal advice, replacing travel documents and more*</p>
+                                                    </th>
+                                                    <td class="table-width-2 text-center vertical-align"><span class="am-icon am-icon-checkmark"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align" style=><span class="Travel-text">Trip Cancellation</span>
+                                                        <p class="Travel-text">Includes Cancel for Any Reason - up to 50% reimbursement if you cancel 10 days or more prior to your trip*</p>
+                                                    </th>
+                                                    <td class="table-width-2 text-center vertical-align"><span class="am-icon am-icon-checkmark"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align"><span class="Travel-text">Trip Interruption*</span></th>
+                                                    <td class="table-width-2 text-center vertical-align"><span class="am-icon am-icon-checkmark"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align"><span class="Travel-text">Travel Delay and Misconnection*</span></th>
+                                                    <td class="table-width-2 text-center vertical-align"><span class="am-icon am-icon-checkmark"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align"><span class="Travel-text">Baggage and Personal Effects*</span></th>
+                                                    <td class="table-width-2"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align"><span class="Travel-text">Personal Money*</span></th>
+                                                    <td class="table-width-2"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align"><span class="Travel-text">Flight and Travel Accident Coverage*</span></th>
+                                                    <td class="table-width-2"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align"><span class="Travel-text">Emergency Medical</span>
+                                                        <p class="Travel-text">Includes medical concierge services by StandBy MD in the U.S., Mexico and the Dominican Republic*</p>
+                                                    </th>
+                                                    <td class="table-width-2"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-12 text-center">
+
+                                        <table class="table table-bordered table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="table-width" style="height: 305px; background-color: #f1fafe !important; vertical-align: middle;" colspan="2">
+                                                        <div style="width:202px; text-align: center; margin:auto" class="text-center"> <span class="Trip-cancel-title">Non-Medical Package<br>Plan</span>
+                                                            <p>If you don&#39;t need emergency medical coverage, this package protects your Miles and more.</p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width Up-to-100 vertical-align">Up to 100% AIR MILES Reward Miles reimbursement* </th>
+                                                    <td class="table-width-2 text-center"><span class="am-icon am-icon-popular-stores"></span></td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width Up-to-100 vertical-align">Up to 100% reimbursment of taxes and fees*</th>
+                                                    <td class="table-width-2 text-center"><span class="am-icon am-icon-popular-stores"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align"><span class="Travel-text">24/7 Emergency Travel Assistance</span>
+                                                        <p class="Travel-text">For medical, travel, legal advice, replacing travel documents and more*</p>
+                                                    </th>
+                                                    <td class="table-width-2 text-center vertical-align"><span class="am-icon am-icon-checkmark"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align" style=><span class="Travel-text">Trip Cancellation</span>
+                                                        <p class="Travel-text">Includes Cancel for Any Reason - up to 50% reimbursement if you cancel 10 days or more prior to your trip*</p>
+                                                    </th>
+                                                    <td class="table-width-2 text-center vertical-align"><span class="am-icon am-icon-checkmark"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align"><span class="Travel-text">Trip Interruption*</span></th>
+                                                    <td class="table-width-2 text-center vertical-align"><span class="am-icon am-icon-checkmark"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align"><span class="Travel-text">Travel Delay and Misconnection*</span></th>
+                                                    <td class="table-width-2 text-center vertical-align"><span class="am-icon am-icon-checkmark"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align"><span class="Travel-text">Baggage and Personal Effects*</span></th>
+                                                    <td class="table-width-2"><span class="am-icon am-icon-checkmark"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align"><span class="Travel-text">Personal Money*</span></th>
+                                                    <td class="table-width-2"><span class="am-icon am-icon-checkmark"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align"><span class="Travel-text">Flight and Travel Accident Coverage*</span></th>
+                                                    <td class="table-width-2"><span class="am-icon am-icon-checkmark"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align"><span class="Travel-text">Emergency Medical</span>
+                                                        <p class="Travel-text">Includes medical concierge services by StandBy MD in the U.S., Mexico and the Dominican Republic*</p>
+                                                    </th>
+                                                    <td class="table-width-2"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-12 text-center">
+
+                                        <table class="table table-bordered table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="table-width" style="height: 305px; background-color: #f1fafe !important; vertical-align: middle;" colspan="2">
+                                                        <div style="width:202px; text-align: center; margin:auto" class="text-center"> <span class="Trip-cancel-title">Worldwide or Canada Comprehensive Plan</span>
+                                                            <div class="bestsellermobile">BestSeller</div>
+                                                            <p>Our best-selling plans protect your Miles and provide a variety of coverages when you travel within Canada or worldwide.</p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width Up-to-100 vertical-align">Up to 100% AIR MILES Reward Miles reimbursement* </th>
+                                                    <td class="table-width-2 text-center"><span class="am-icon am-icon-popular-stores"></span></td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width Up-to-100 vertical-align">Up to 100% reimbursment of taxes and fees*</th>
+                                                    <td class="table-width-2 text-center"><span class="am-icon am-icon-popular-stores"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align"><span class="Travel-text">24/7 Emergency Travel Assistance</span>
+                                                        <p class="Travel-text">For medical, travel, legal advice, replacing travel documents and more*</p>
+                                                    </th>
+                                                    <td class="table-width-2 text-center vertical-align"><span class="am-icon am-icon-checkmark"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align" style=><span class="Travel-text">Trip Cancellation</span>
+                                                        <p class="Travel-text">Includes Cancel for Any Reason - up to 50% reimbursement if you cancel 10 days or more prior to your trip and if you purchase insurance within 72 hours of booking your trip*</p>
+                                                    </th>
+                                                    <td class="table-width-2 text-center vertical-align"><span class="am-icon am-icon-checkmark"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align"><span class="Travel-text">Trip Interruption*</span></th>
+                                                    <td class="table-width-2 text-center vertical-align"><span class="am-icon am-icon-checkmark"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align"><span class="Travel-text">Travel Delay and Misconnection*</span></th>
+                                                    <td class="table-width-2 text-center vertical-align"><span class="am-icon am-icon-checkmark"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align"><span class="Travel-text">Baggage and Personal Effects*</span></th>
+                                                    <td class="table-width-2"><span class="am-icon am-icon-checkmark"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align"><span class="Travel-text">Personal Money*</span></th>
+                                                    <td class="table-width-2"><span class="am-icon am-icon-checkmark"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align"><span class="Travel-text">Flight and Travel Accident Coverage*</span></th>
+                                                    <td class="table-width-2"><span class="am-icon am-icon-checkmark"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="table-width vertical-align"><span class="Travel-text">Emergency Medical</span>
+                                                        <p class="Travel-text">Includes medical concierge services by StandBy MD in the U.S., Mexico and the Dominican Republic*</p>
+                                                    </th>
+                                                    <td class="table-width-2 vertical-align"><span class="am-icon am-icon-checkmark"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Carousel -->
+
+                </div>
+            </div>
+        </div>
+        <!-- End of Mobile Table Section-->
+
+        <!-- Additional Plans Section-->
+        <div class="container desktop">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-12">
+                    <table id="additional-plans" class="table table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="Additional-Plans-title vertical-align" style="padding:16px !important; width: 312px;">Additional Plans Available</td>
+                                <td class="vertical-align" style="padding:16px !important; width: 272px; margin-bottom:0px !important;"><span class="rental-titles">Rental Car Physical Damage</span>
+                                    <p style="color: #fff;">Rental car protection for collision, theft, fire or vandalism</p>
+                                </td>
+                                <td class="vertical-align" style="padding:16px !important; margin-bottom:0px !important;"><span class="rental-titles">Car Combo</span>
+                                    <p style="color: #fff;">Rental Car Physical Damage combined with Trip Cancellation/Trip Interruption</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- End of Additional Plans Section-->
+
+        <!-- Mobile Additional Plans Section-->
+        <div class="container mobile_device_375px">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-12">
+                    <table id="additional-plans" class="table table-condensed text-center">
+                        <tbody>
+                            <tr>
+                                <td class="Additional-Plans-title vertical-align" style="font-size: 22px !important; padding-top: 15px !important; padding-bottom: 15px !important; ">Additional Plans Available</td>
+                            </tr>
+                            <tr>
+                                <td class="vertical-align"><span class="rental-titles">Rental Car Physical Damage</span>
+                                    <p style="color: #fff;">Rental car protection for collision, theft, fire or vandalism</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="vertical-align"><span class="rental-titles">Car Combo</span>
+                                    <p style="color: #fff;">Rental Car Physical Damage combined with Trip Cancellation/Trip Interruption</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- End of Mobile Additional Plans Section-->
+
+        <!-- TC Section-->
+        <div class="container desktop">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-12 terms-conditions">
+                    <p>* Conditions, limitations and exclusions apply.</p>
+
+                    <p>Travel insurance is designed to cover losses arising from sudden and unforeseeable circumstances. It is important that you read and understand your policy before you travel as your coverage may be subject to certain exclusions or limitations. A pre-existing condition exclusion may apply to medical conditions and/or symptoms that existed prior to your trip. Check to see how this applies in your policy and how it relates to your departure date, date of purchase or effective date. In the event of an accident, injury or sickness, your prior medical history may be reviewed when a claim is reported. If your plan provides travel assistance, you must notify our Assistance Centre if you experience a medical emergency or prior to treatment. Your policy may limit benefits if you fail to contact our Assistance Centre.</p>
+
+                    <p>underwritten by The Manufacturers Life Insurance Company and First North American Insurance Company, a wholly owned subsidiary of Manulife.
+                        Manulife and the Block Design are trademarks of The Manufacturers Life Insurance Company and are used by it, and by its affiliates under licence. PO Box 4213, Station A, Toronto, ON M5W 5M3</p>
+
+                </div>
+            </div>
+        </div>
+        <!-- End of TC Section-->
+
+        <!-- Mobile TC Section-->
+        <div class="container mobile_device_375px">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-12 terms-conditions" style="
+    padding-bottom: 30px;">
+                    <p style="text-align: center; ">
+                        <a class="am-functional-button am-functional-button--dark btn" id="mobilehideshowTC" value="hide/show" data-value="mobiletermsTC">
+                            <span class="am-functional-button__text terms-and-conditions">Terms and conditions</span>
+                            <span class="am-icon-button am-icon-button--dark am-functional-button--right">
+                                <span class="am-icon mobile-terms-icon-TC am-icon-functional-secondary-plus"></span>
+                            </span>
+                        </a>
+                        <div style="display:none;" id="mobiletermsTC" class="am-content-drawer am-content-drawer--light">
+                            <div class="am-content-drawer__pane am-content-drawer__pane--light terms-conditions">
+                                <a href="#collapseterms" id="mobilehideshowTC" value="hide/show" data-value="mobiletermsTC"><button class="am-icon-button am-icon-button--white am-icon-button--small am-content-drawer__close-button">
+                                        <span class="am-icon am-icon-functional-secondary-close"></span>
+                                </a>
+                                </button>
+                                <p>* Conditions, limitations and exclusions apply.</p>
+
+                                <p>Travel insurance is designed to cover losses arising from sudden and unforeseeable circumstances. It is important that you read and understand your policy before you travel as your coverage may be subject to certain exclusions or limitations. A pre-existing condition exclusion may apply to medical conditions and/or symptoms that existed prior to your trip. Check to see how this applies in your policy and how it relates to your departure date, date of purchase or effective date. In the event of an accident, injury or sickness, your prior medical history may be reviewed when a claim is reported. If your plan provides travel assistance, you must notify our Assistance Centre if you experience a medical emergency or prior to treatment. Your policy may limit benefits if you fail to contact our Assistance Centre.</p>
+
+                                <p>underwritten by The Manufacturers Life Insurance Company and First North American Insurance Company, a wholly owned subsidiary of Manulife.
+                                    Manulife and the Block Design are trademarks of The Manufacturers Life Insurance Company and are used by it, and by its affiliates under licence. PO Box 4213, Station A, Toronto, ON M5W 5M3</p>
+                            </div>
+                        </div>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <!-- End of Mobile TC Section-->
+
+        <!-- Want More Info Section-->
+        <div class="container desktop">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-12">
+                    <h5>Want more information about our travel insurance plans?</h5>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-12">
+                    <a href="https://www.airmiles.ca/arrow/TravelAssistanceDetail?selectedCategoryId=null&sectionId=2400062"><button class="am-button am-button--secondary">View more details</button></a>
+                    <ul class="insurance-list" style="display: block; overflow: hidden; padding-left: 18px;">
+                        <li>
+                            <a href="img/policy.pdf" class="am-functional-button am-functional-button--dark">
+                                <span class="am-icon-button am-icon-button--dark am-functional-button--right">
+                                    <span class="am-icon am-icon-functional-secondary-arrow-down"></span>
+                                </span>
+                                <span class="am-functional-button__text travel-insurance-links">Complete Policy Booklet</span>
+
+                            </a>
+                        </li>
+                        <li>
+
+                            <a href="img/AMDGF0617_DistributionGuideFinal.pdf" class="am-functional-button am-functional-button--dark">
+                                <span class="am-icon-button am-icon-button--dark am-functional-button--right">
+                                    <span class="am-icon am-icon-functional-secondary-arrow-down"></span>
+                                </span>
+                                <span class="am-functional-button__text travel-insurance-links">Distribution Guide for Québec Residents</span>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!-- End of Want More Info Section-->
+
+        <!-- Mobile Want More Info Section-->
+        <div class="container wantmore mobile_device_375px">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <h5>Want more information about our travel insurance plans?</h5>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center text-center">
+                <div class="col-lg-12">
+                    <ul class="insurance-list" style="display: block; overflow: hidden; ">
+                        <li>
+                            <a href="img/policy.pdf" class="am-functional-button am-functional-button--dark">
+                                <span class="am-icon-button am-icon-button--dark am-functional-button--right">
+                                    <span class="am-icon am-icon-functional-secondary-arrow-down"></span>
+                                </span>
+
+                                <span class="am-functional-button__text travel-insurance-links">Complete Policy Booklet</span>
+
+                            </a>
+                        </li>
+                        <li>
+
+                            <a href="img/AMDGF0617_DistributionGuideFinal.pdf" class="am-functional-button am-functional-button--dark">
+                                <span class="am-icon-button am-icon-button--dark am-functional-button--right">
+                                    <span class="am-icon am-icon-functional-secondary-arrow-down"></span>
+                                </span>
+                                <span class="am-functional-button__text travel-insurance-links">Distribution Guide for Québec Residents</span>
+
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="https://www.airmiles.ca/arrow/TravelAssistanceDetail?selectedCategoryId=null&sectionId=2400062"><button class="am-button am-button--secondary">View more details</button></a>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- End of Mobile Want More Info Section-->
+
+        <section class="faqbg">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-12">
+
+                        <h5 style="margin-bottom: 0px !important;">Frequently asked questions</h5>
+
+                        <div class="panel-group" id="accordionMessagesSetup">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a href="#collapseMessagesSetup" id="hideshow4" value="hide/show" data-value="content4">
+                                            <span class="am-icon-button am-icon-button--primary am-functional-button--right icon-left"> <span class="am-icon faq-icon am-icon-functional-secondary-arrow-down"> </span> </span>
+                                            <p class="faqs-titles">How will the charge for the insurance policy appear on my credit card statement?</p>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div style="overflow: hidden; display:none;" id="content4">
+                                    <div class="card-body">
+                                        <p>The charge will appear as AIR MILES<sup>&reg;</sup> Travel Insurance.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="" class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a href="#collapseMessagesSetup2" id="hideshow3" value="hide/show" data-value="content3">
+                                            <span class="am-icon-button am-icon-button--primary am-functional-button--right icon-left"> <span class="am-icon faq-icon am-icon-functional-secondary-arrow-down"> </span> </span>
+                                            <p class="faqs-titles">How will the charge for the insurance policy appear on my credit card statement?</p>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div style="overflow: hidden; display:none;" id="content3">
+                                    <div class="card-body">
+                                        <p></p>Only travel (flight, car, hotel) booked on <a href="https://www.airmiles.ca/arrow/Home">airmiles.ca</a> or with an AIR MILES Customer Care specialist is eligible for coverage with AIR MILES Travel Insurance.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a href="#collapseMessagesSetup3" id="hideshow2" value="hide/show" data-value="content2">
+                                            <span class="am-icon-button am-icon-button--primary am-functional-button--right icon-left"> <span class="am-icon faq-icon am-icon-functional-secondary-arrow-down"> </span> </span>
+                                            <p class="faqs-titles">I booked multiple travel products, using Miles. Can I insure them all under one policy?</p>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div style="overflow: hidden; display:none;" id="content2">
+                                    <div class="card-body">
+                                        <p>You can select and purchase an insurance policy that suits your needs once you have finished all of your bookings. During this process you can insure the full value of your trip. Conditions, limitations and exclusions apply. More details will be provided on your emailed travel itinerary.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a href="#collapseMessagesSetup4" id="hideshow1" value="hide/show" data-value="content1">
+                                            <span class="am-icon-button am-icon-button--primary am-functional-button--right icon-left"> <span class="am-icon faq-icon am-icon-functional-secondary-arrow-down"> </span> </span>
+                                            <p class="faqs-titles">What is family coverage?</p>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div style="overflow: hidden; display:none;" id="content1">
+                                    <div class="card-body">
+                                        <p>Family coverage is available to you if all family members to be insured under one policy are named in your confirmation, are under age 60, and you have purchased and paid for family coverage. The family coverage covers you, a member of your family (spouse, parent or adult son or daughter travelling with you) and your child(ren) or grandchild(ren). To be eligible for insurance under a plan that includes Emergency Medical coverage, the child(ren) or grandchild(ren) must be at least 31 days of age. Note: A maximum of 2 adults is permitted under family coverage. Conditions, limitations and exclusions apply.</p>
+
+                                        <p>For more information on the AIR MILES Travel Insurance policy, <a href="img/policy.pdf">click here</a>.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a href="#collapseMessagesSetup4" id="hideshow5" value="hide/show" data-value="content5">
+                                            <span class="am-icon-button am-icon-button--primary am-functional-button--right icon-left"> <span class="am-icon faq-icon am-icon-functional-secondary-arrow-down"> </span> </span>
+                                            <p class="faqs-titles">I have already booked my trip on airmiles.ca. Can I purchase travel insurance for my AIR MILES bookings?</p>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div style="overflow: hidden; display:none;" id="content5">
+                                    <div class="card-body">
+                                        <p>Yes, you can add insurance coverage by visiting <a href="https://www.igoinsured.com/direct/start.aspx?ag=AMTIB2C">AIR MILES Travel Insurance</a>.</p>
+
+                                        <p>If you reside in the following provinces, you can add AIR MILES Travel Insurance by calling 1-844-807-0759.</p>
+
+                                        <ul>
+                                            <li>Nova Scotia</li>
+                                            <li>New Brunswick</li>
+                                            <li>Prince Edward Island</li>
+                                            <li>Quebec</li>
+                                            <li>Saskatchewan</li>
+                                            <li>Yukon</li>
+                                        </ul>
+                                        <p>I booked a one-way flight using Miles but I am staying in the destination for a longer time period. Can I book insurance for my entire trip?</p>
+
+                                        <p>You can select and purchase an insurance policy that suits your needs after you have finished your booking. During this process you will indicate your extended return date. Conditions, limitations and exclusions apply. More details will be provided on your emailed travel itinerary.</p>
+
+                                        <p>For more information on the AIR MILES Travel Insurance policy, <a href="img/policy.pdf">click here</a>.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a href="#collapseMessagesSetup4" id="hideshow6" value="hide/show" data-value="content6">
+                                            <span class="am-icon-button am-icon-button--primary am-functional-button--right icon-left"> <span class="am-icon faq-icon am-icon-functional-secondary-arrow-down"> </span> </span>
+                                            <p class="faqs-titles">I'm travelling with an infant. Do I need to purchase a separate policy for the infant?</p>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div style="overflow: hidden; display:none;" id="content6">
+                                    <div class="card-body">
+                                        <p>If you have an infant who is at least 31 days old and under the age of 2 years who is an immediate family member, travelling with you and listed on the confirmation for this insurance, the infant will be covered at no charge under your policy if you have purchased the Worldwide Comprehensive Plan or the Canada Comprehensive Plan.</p>
+
+                                        <p>For more information on the AIR MILES Travel Insurance policy, <a href="img/policy.pdf">click here</a>.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="https://www.airmiles.ca/arrow/Help?N=3999996601" class="viewallFAQs-btn"><button class="am-button am-button--primary" style="
+    margin-bottom: 30px !important; margin-top: 40px !important;
+">View all FAQs</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div><!-- End of Bootstrap tag -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://squ.airmiles.ca/cdn/vendors/owl_carousel/v2.2.1/owl.carousel.min.js"></script>
+    <script>
+        jQuery(".owl-one").owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            autoplaySpeed: 1000
+        });
+        jQuery(".owl-two").owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: false,
+            autoplaySpeed: 1000,
+            nav: true,
+            autoHeight: true,
+            indicators: false,
+            navText: [
+                "<span class='am-icon-button am-icon-button--primary am-functional-button--right icon-left'> <span class='am-icon am-icon-functional-arrow-left'> </span> </span>",
+                "<span class='am-icon-button am-icon-button--primary am-functional-button--right icon-left'> <span class='am-icon am-icon-functional-arrow-right'> </span> </span>"
+            ],
+        });
+
+    </script>
+
+    <script type="text/javascript">
+        $('[id^="hideshow"]').on('click', function(event) {
+            var dataValue = $(this).attr('data-value');
+            dataValue = $('#' + dataValue);
+            $(dataValue).toggle('hide');
+            $(this).find($(".faq-icon")).toggleClass('am-icon-functional-secondary-arrow-up am-icon-functional-secondary-arrow-down');
+            $('#hideshow').find($(".terms-icon")).toggleClass('am-icon-functional-secondary-plus am-icon-functional-secondary-minus');
+        });
+
+    </script>
+    <script type="text/javascript">
+        $('[id^="mobilehideshow"]').on('click', function(event) {
+            var dataValue = $(this).attr('data-value');
+            dataValue = $('#' + dataValue);
+            $(dataValue).toggle('hide');
+            $('#mobilehideshow').find($(".mobile-terms-icon")).toggleClass('am-icon-functional-secondary-plus am-icon-functional-secondary-minus');
+            $('#mobilehideshowTC').find($(".mobile-terms-icon-TC")).toggleClass('am-icon-functional-secondary-plus am-icon-functional-secondary-minus');
+        });
+
+    </script>
+    <script type="text/javascript">
+        var schedule = [
+            ['May 31 2018 00:00:00 GMT-0400', 'July 3 2018 23:59:59 GMT-0400']
+        ];
+
+
+        // iterate over each element in the schedule
+        for (var i = 0; i < schedule.length; i++) {
+
+            var startDate = schedule[i][0];
+            var endDate = schedule[i][1];
+
+            // put dates in milliseconds for easy comparisons
+            var startMs = Date.parse(startDate);
+            var endMs = Date.parse(endDate);
+            var currentMs = Date.parse(new Date());
+
+
+            if (endMs > currentMs && currentMs >= startMs) {
+                jQuery("#promo-block").css("display", "block");
+
+            } else if (endMs > currentMs && currentMs < startMs) {
+                //Execute code -- BEFORE schedule
+
+            } else if (endMs < currentMs && currentMs >= startMs) {
+                //Execute code -- AFTER schedule
+            }
+        }
+
+    </script>
+</body>
+
+</html>
